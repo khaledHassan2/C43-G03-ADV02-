@@ -87,6 +87,12 @@ namespace Demo
             //int re =SumList(array3);
             //Console.WriteLine($" result: {re}");
             #endregion
+
+            #region List Method
+            //List<int> list = new List<int>() { 1,2,3,4,5};
+            //list.Insert(0, 2);
+            ////list.InsertRange(1   int[] {1,2,3,5});
+            #endregion
         }
     }
 }
