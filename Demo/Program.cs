@@ -17,6 +17,19 @@ namespace Demo
             }
             return 0;
         }
+        public static int SumList(List<int> list)
+        {
+            int Sum = 0;
+            if (list is not null)
+            {
+                for (int i = 0; i < list.Count; i++)
+                {
+                    Sum += list[i];
+                }
+                return Sum;
+            }
+            return 0;
+        }
         static void Main(string[] args)
         {
             #region non genaric collection [array list]
@@ -57,6 +70,22 @@ namespace Demo
             ////compiler cannot inforce number 6
             //int re=sum(array3);
             //Console.WriteLine($" result{re}");
+            #endregion
+
+            #region genaric collection [list]
+            //List<int> array3 = new List<int>();
+
+            //array3.Add(1);
+            //array3.Add(2);
+            //array3.Add(3);
+            //array3.AddRange(new int[] {4,5 });
+            //array3.TrimExcess();
+            //     // array3.Add("ay7aga"); error
+            //Console.WriteLine($"count = {array3.Count}  / capacity: {array3.Capacity}");
+
+            ////compiler cannot inforce number 6
+            //int re =SumList(array3);
+            //Console.WriteLine($" result: {re}");
             #endregion
         }
     }
