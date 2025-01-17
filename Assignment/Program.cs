@@ -74,6 +74,19 @@
             #endregion
 
             #endregion
+
+            #region Q02)Considering the Code Below, Write Down the Body of all Listed Methods and Properties and Constructor:
+            //Book MyBook = new Book("957-55", "C#", new string[] {"khaled","mostsfa","rana"},new DateTime(2000,10,03),55.99m);
+
+            //Console.WriteLine("Book Details");
+            //Console.WriteLine("Title" + BookFunctions.GetTitle(MyBook));
+            //Console.WriteLine("Authors" + BookFunctions.GetAuthors(MyBook));
+            //Console.WriteLine("Price" + BookFunctions.GetPrice(MyBook));
+            #endregion
+
+
+
+
         }
     }
 }
