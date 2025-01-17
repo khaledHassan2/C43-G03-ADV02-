@@ -1,7 +1,22 @@
-﻿namespace Demo
+﻿using System.Collections;
+
+namespace Demo
 {
     internal class Program
     {
+        public static int sum(ArrayList ar)
+        {
+            int Sum = 0;
+            if (ar is not null)
+            {
+                for (int i = 0; i < ar.Count; i++)
+                {
+                    Sum += (int?)ar[i] ?? 0;
+                }
+                return Sum;
+            }
+            return 0;
+        }
         static void Main(string[] args)
         {
             #region non genaric collection [array list]
@@ -24,6 +39,24 @@
 
 
 
+            #endregion
+
+            #region genaric collection [Arraylist]
+            //ArrayList array2 = new ArrayList(5) { 1,2,3,4,5};
+            //Console.WriteLine($"count = {array2.Count}  / capacity: {array2.Capacity}");
+
+            //array2.Add(6);
+            //Console.WriteLine("after add 6");
+            //Console.WriteLine($"count = {array2.Count}  / capacity: {array2.Capacity}");
+
+            //ArrayList array3 = new ArrayList();
+            //array3.Add(1);
+            //array3.Add(2);
+            //array3.Add(3);
+            //array3.Add("hamada");
+            ////compiler cannot inforce number 6
+            //int re=sum(array3);
+            //Console.WriteLine($" result{re}");
             #endregion
         }
     }
